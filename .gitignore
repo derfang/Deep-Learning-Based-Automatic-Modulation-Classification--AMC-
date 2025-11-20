@@ -1,0 +1,23 @@
+# --- Data Files (MATLAB/Synthetic) ---
+*.mat
+my_synthetic_dataset.mat
+dataset_hard_64qam.mat
+
+# --- Trained AI Models (Large Binary Files) ---
+*.h5
+*.keras
+amc_model_*.h5
+
+# --- Python Cache & Virtual Environments ---
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
+
+# --- Jupyter Notebook Checkpoints ---
+.ipynb_checkpoints/
+
+# --- IDE Settings (Optional) ---
+.vscode/
+.idea/
