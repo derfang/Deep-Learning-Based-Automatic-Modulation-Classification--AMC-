@@ -55,8 +55,7 @@ dispite all that this model has the best output for high enough SNR (99.84% @ 18
 
 ## 4. Project Structure
 ```text
-├── dataset_generation.m       # MATLAB script to create .mat files
-├── run_amc_bigdata.py         # Main Python script (Training & Evaluation)
+├── DataGenerator.m            # MATLAB script to create .mat files
+├── amc.ipynb                  # Main Python script (Training & Evaluation)
 ├── my_synthetic_dataset.mat   # (Ignored by Git) The raw data
-├── models/                    # Saved .h5 model files
-└── README.md                  # This documentation
+README.md                      # This documentation
