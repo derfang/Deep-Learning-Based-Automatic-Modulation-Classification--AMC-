@@ -49,6 +49,7 @@ The comparative study yielded four critical insights:
 2.  **The "Fair Weather" Trap:** The **Overfit Architecture (Red Line)** failed catastrophically at low SNR (<0dB). Despite having more parameters, its lack of exposure to noise during training made it useless in "real world" conditions.
 
 3.  **The "Partial Exposure" Fallacy:** The **>0dB Experiment (Purple Line)** tracks the Red Line almost perfectly. This is a crucial finding: even when we allowed the model to see "decent" signals (0dB to 5dB), it *still* failed at low SNR. This proves that **exclusion of negative SNR data** is the root cause of failure. The AI effectively needs to see "garbage" (noise-dominated signals) during training to learn the statistical boundary between signal and noise.
+dispite all that this model has the best output for high enough SNR (99.84% @ 18dB)
 
 4.  **Big Data stabilizes Deep Learning:** The **Optimized V2 (Green Line)** initially struggled with smaller datasets (underfitting). However, when fed the full 90,000-sample dataset, its Batch Normalization layers allowed it to scale perfectly, matching the Baseline's accuracy while offering the architectural depth needed for future, harder tasks (like 64-QAM).
 
